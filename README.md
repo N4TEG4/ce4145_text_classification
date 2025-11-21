@@ -18,23 +18,6 @@ ce4145_project/
 ├── requirements.txt ← package dependencies
 └── README.md
 
-
-### Implemented Pipelines
-
-1. **Word-Level TF–IDF + Multinomial Naïve Bayes (MNB)**  
-   - Classic probabilistic text classifier.  
-   - Represents each document as a sparse vector of word TF–IDF features.  
-   - Well-suited for small, clean datasets.
-
-2. **Character-Level TF–IDF + Linear Support Vector Machine (SVM)**  
-   - Represents documents as character n-gram TF–IDF features.  
-   - Captures subword patterns, useful for stylistic or misspelling variations.  
-   - Strong linear baseline for text classification.
-
-Both models are evaluated and compared using **accuracy** and **weighted F1 score** on validation and test splits.
-
----
-
 ## Dataset
 
 **Dataset source:** [UCI Sentiment Labelled Sentences](https://archive.ics.uci.edu/ml/datasets/sentiment+labelled+sentences)
@@ -53,11 +36,6 @@ data/
 ---
 
 ## Setup Instructions
-
-### Create a virtual environment
-```cmd
-py -3.11 -m venv .venv
-.venv\Scripts\activate
 
 pip install -r requirements.txt
 
